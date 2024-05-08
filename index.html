@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="clock-area">
+      <h2 id="clock">00:00:00</h2>
+    </div>
+  
+    <div id="weather-area">
+      <h2 id="weather"></h2>
+    </div>
+
+    <div id="login-area">
+      <input type="text" id="putName" required />
+      <input type="submit" id="loginBtn" value="저장">
+    </div>
+    <div id="welcome-area" style="display: none">
+      <h3 id="welcome-text"></h3>
+    </div>
+    
+    <div id="list-area" style="margin-top: 10px;">
+        <h3>TODO LIST</h3>
+      <input type="text" id="inputTodo" required />
+      <input type="submit" id="saveBtn" value="추가" />
+    </div>
+    <div id="todo-list">
+    </div>
+
+    <script src="./login.js" type="module"></script>
+    <script src="./showTime.js" type="module"></script>
+    <script src="./weather.js" type="module"></script>
+    <script src="./saveList.js" type="module"></script>
+    <script src="./randomImg.js" type="module"></script>
+  </body>
+</html>
