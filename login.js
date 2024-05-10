@@ -4,9 +4,11 @@ const loginArea = document.querySelector("#login-area");
 const welcomeText = document.querySelector("#welcome-text");
 const welcomeArea = document.querySelector("#welcome-area");
 
-if(localStorage.getItem("name") !== "") {
+const savedName = localStorage.getItem("name");
+
+if(savedName !== "" || savedName !== null) {
   loginArea.style.setProperty("display", "none");
-  welcomeText.innerHTML = `Welcome ${localStorage.getItem("name")}!`;
+  welcomeText.innerHTML = `Welcome ${savedName}!`;
   welcomeArea.style.setProperty("display", "block");
 }
 
