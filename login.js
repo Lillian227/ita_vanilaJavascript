@@ -5,8 +5,10 @@ const welcomeText = document.querySelector("#welcome-text");
 const welcomeArea = document.querySelector("#welcome-area");
 
 const savedName = localStorage.getItem("name");
+console.log(savedName);
 
-if(savedName !== "" || savedName !== null) {
+if(savedName !== "" && savedName !== null) {
+  console.log("진입??????");
   loginArea.style.setProperty("display", "none");
   welcomeText.innerHTML = `Welcome ${savedName}!`;
   welcomeArea.style.setProperty("display", "block");
